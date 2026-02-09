@@ -10,6 +10,13 @@
     font-weight: normal;
 }
 
+/* GLOBAL CONFIGS */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 /* PSEUDO CLASSES */
 :root {
     /* GUI COLORS */
