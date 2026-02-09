@@ -1,0 +1,67 @@
+/* RULES */
+@charset "UTF-8";
+
+/* FONTS IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fonts/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+/* PSEUDO CLASSES */
+:root {
+    /* GUI COLORS */
+    --color0: #c5ebd6;
+    --color1: #83e1ad;
+    --color2: #3ddc84;
+    --color3: #2fa866;
+    --color4: #1a5c37;
+    --color5: #063d1e;
+    /* FONTS */
+    --defautFont: Arial, Verdana, sans-serif;
+    --highlightFont: 'Bebas Neue', cursive;
+    --androidFont: 'Android', cursive;
+}
+
+/* BASE CONFIGS */
+body {
+    background-color: var(--color0);
+    font-family: var(--defautFont);
+}
+
+header {
+    background-color: var(--color4);
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--highlightFont);
+}
+
+header > p {
+    color: white;
+}
+
+nav {
+    background-color: var(--color5);
+}
+
+main {
+    background-color: white;
+}
+
+main h1 {
+    color: var(--color5);
+    font-family: var(--androidFont);
+}
+
+main h2 {
+    font-family: var(--androidFont);
+}
+
+footer {
+    background-color: var(--color5);
+    color: white;
+}
