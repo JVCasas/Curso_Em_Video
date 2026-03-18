@@ -34,3 +34,31 @@ section#cellphone{
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+iframe {
+    position: relative;
+    top: 82px;
+    left: 24px;
+    width: 264px;
+    height: 468px;
+}
+
+section#socialmedia {
+    text-align: right;
+}
+
+section#socialmedia > a > img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #00000066;
+    box-sizing: border-box;
+}
+
+section#socialmedia > a > img:hover {
+    border: 2px solid #ffffff88;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px #00000066;
+    transition: transform 0.25s, border 0.25s, box-shadow 0.25s;
+}
