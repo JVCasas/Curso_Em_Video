@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/all.css">
+    <link rel="stylesheet" href="styles/mediaQuery.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <title>Menu Reponsivo</title>
+</head>
+<body onresize="changeSize()">
+    <header>
+        <h1>Meu Site</h1>
+        <menu>
+            <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            <ul id="menuItens">
+                <li><a href="#">Página Principal</a></li>
+                <li><a href="#">Artigos</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Imagens</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Título</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam facere, exercitationem, itaque nobis asperiores excepturi labore at dolore deleniti incidunt amet vitae eos ratione officiis mollitia doloribus nisi non cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, delectus qui quisquam aspernatur, veniam ex molestiae dolore amet iusto numquam beatae asperiores, itaque praesentium. Autem corporis mollitia quo ipsum consequuntur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis provident quod labore sed omnis vero, iusto qui, cumque repellendus tenetur quae delectus ad, dolorum esse quidem dolorem doloremque non ab! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, porro. Temporibus quam perferendis at, in voluptatibus autem odio, itaque eos dicta, dolor repellat atque doloribus veritatis nostrum dolore aspernatur voluptas.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro voluptate quas ratione temporibus nam, delectus tenetur doloribus ea excepturi natus aliquam. Animi dignissimos tempore adipisci voluptatem, officia dolorem ab eveniet? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio eum ducimus minus reprehenderit sunt rerum magnam ea aspernatur veniam amet eveniet sapiente eaque mollitia, aperiam eligendi ab! Quia, voluptate et! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente modi ad labore, soluta esse quaerat expedita, asperiores aliquam facere quo perspiciatis amet vitae quae iste porro. Molestias ducimus nemo totam?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officiis nam mollitia aperiam porro dignissimos eaque culpa voluptates maxime at. Soluta cupiditate numquam nulla ipsa, autem eligendi consequatur nam! Optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi magnam expedita officia voluptatibus odit accusamus ex repudiandae facere, aliquid laborum, corrupti doloremque consectetur quis optio ullam ipsa. Magni, atque sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minus iste voluptatibus ad vel exercitationem aliquid laborum quasi inventore assumenda, voluptas, quaerat ea nobis dolorum, earum cumque asperiores hic nesciunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus eligendi est molestiae facere libero maxime itaque magni? Vel temporibus, saepe autem dolorem vitae eos nostrum. Nobis laborum minus maxime veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum vel a qui delectus iusto porro sed, quaerat officiis tempore iure molestiae sapiente harum aperiam rem reiciendis quo. Autem, veniam voluptatum?
+            </p>
+        </article>
+    </main>
+    <script>
+        function changeSize() {
+            if (window.innerWidth >= 768){
+                menuItens.style.display = 'block';
+            }
+            else {
+                menuItens.style.display = 'none';
+            }
+        }
+        function clickMenu() {
+            if(menuItens.style.display == 'block'){
+                menuItens.style.display = 'none';
+            }
+            else{
+                menuItens.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
