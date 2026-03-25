@@ -1,11 +1,24 @@
 @charset "UTF-8";
 
 div.container {
-    background-color: #ffa07a;
     display: flex;
-    /* flex-direction: row;
-    flex-wrap: wrap; */
     flex-flow: row wrap;
+    justify-content: center;
+    /* Alinha conteúdo de acordo com o eixo principal */
+    /* flex-start       -> primeiro item grudado no main start e sem espaçamento entre os itens */
+    /* flex-end         -> ultimo item grudado no main end e sem espaçamento entre os itens */
+    /* center           -> itens centralizados no meio do eixo main e sem espaçamento entre os itens */
+    /* space-between    -> primeiro item colado no main start, ultimo item no main end com espaçamento igual entre os itens */
+    /* space-evenly     -> espaçamento entre os itens e o inicio e fim do eixo main distribuido uniformemente */
+    /* space-around     -> calcula o espaço do container e divide igualmente entre os itens e os centraliza nesse espaço individual */
+    align-items: flex-end;
+    /* Alinha o conteúdo de acordo com o eixo perpendicular */
+    /* stretch          -> estica os itens ao longo do cross axis */
+    /* flex-start      -> itens grudados no cross start */
+    /* flex-end        -> itens grudados no cross end */
+    /* center           -> conteúdo no meio do cross axis */
+    height: 500px;
+    background-color: #ffa07a;
 }
 
 div.item {
@@ -13,5 +26,4 @@ div.item {
     background-color: #20b2aa;
     border: 1px solid #000000;
     text-align: center;
-    flex: auto;
 }
