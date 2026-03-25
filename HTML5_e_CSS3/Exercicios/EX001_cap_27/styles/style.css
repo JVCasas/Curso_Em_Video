@@ -3,10 +3,15 @@
 div.container {
     background-color: #ffa07a;
     display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
 }
 
 div.item {
+    padding: 10px;
     background-color: #20b2aa;
     border: 1px solid #000000;
+    text-align: center;
     flex: auto;
 }
