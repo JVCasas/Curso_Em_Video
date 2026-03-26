@@ -14,15 +14,7 @@ main {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    align-content: space-evenly;
-    /* Propriedade valida apenas quando o valor de flex-wrap for wrap, funcionamento semelhante ao justify content mas para o eixo transversal */
-    /* stretch          -> valor padrão, estica os itens */
-    /* flex-start       -> cola o primeiro item no cross start, sem espaçamento entre os itens */
-    /* flex-end         -> cola o ultimo item no cross end, sem espaçamento entre os itens */
-    /* center           -> centraliza os itens na tela, sem espaçamento entre eles */
-    /* space-between    -> cola o primeiro item no cross start e o ultimo no cross end e distribui espaços entre os itens */
-    /* space-evenly     -> cria espaços uniformes entre os itens e o cross start e cross end */
-    /* space-arround    -> calcula e distrbui o espaço do container igualmente entre os itens e os sentraliza nesse espaço */
+    align-items: center;
     height: 90vh;
     width: 90vw;
     background-color: #90ee90;
@@ -32,5 +24,29 @@ section{
     padding: 10px;
     background-color: #20b2aa;
     border: 1px solid black;
-    width: 300px;
+    width: 100px;
+}
+
+section#i6 {
+    order: -1;
+    /* Propriedade numerica de itens em flex-box que define a ordem de exibição dos itens (valor padrão 0) no caso de valor igual entre elementos prevalece a ordem presente no html */
+    align-self: center;
+}
+
+section#i3 {
+    align-self: stretch;
+    /* propriedade que configura o alinhamento dentro dos itens individualmente no flex-box em relação ao eixo transversal */
+    /* auto             -> herda o alinhamento do pai */
+    /* flex-start       -> cola elementos no cross start */
+    /* flex-end         -> cola elementos no cross end */
+    /* center           -> centraliza os conteúdo */
+    /* stretch          -> estica o conteúdo para ocupar o interior */
+}
+
+section#i1{
+    align-self: flex-start;
+}
+
+section#i4 {
+    align-self: flex-end;
 }
