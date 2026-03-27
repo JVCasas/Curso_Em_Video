@@ -14,7 +14,7 @@ main {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-content: flex-start;
     height: 90vh;
     width: 90vw;
     background-color: #90ee90;
@@ -24,29 +24,8 @@ section{
     padding: 10px;
     background-color: #20b2aa;
     border: 1px solid black;
-    width: 100px;
-}
-
-section#i6 {
-    order: -1;
-    /* Propriedade numerica de itens em flex-box que define a ordem de exibição dos itens (valor padrão 0) no caso de valor igual entre elementos prevalece a ordem presente no html */
-    align-self: center;
-}
-
-section#i3 {
-    align-self: stretch;
-    /* propriedade que configura o alinhamento dentro dos itens individualmente no flex-box em relação ao eixo transversal */
-    /* auto             -> herda o alinhamento do pai */
-    /* flex-start       -> cola elementos no cross start */
-    /* flex-end         -> cola elementos no cross end */
-    /* center           -> centraliza os conteúdo */
-    /* stretch          -> estica o conteúdo para ocupar o interior */
-}
-
-section#i1{
-    align-self: flex-start;
-}
-
-section#i4 {
-    align-self: flex-end;
+    flex-basis: 500px;
+    /* propriedade que altera o comportamento de tamanho dos itens dentro de um container flex-box */
+    /* auto             -> mantem um tamanho de forma que o conteúdo do item caiba dentro dele, diminuindo até o tamanho máximo possível levando em conta ele e aumentando ate um tamanho pouco maior que o conteúdo. Valor padrão. */
+    /* N#px             -> valor que estabelece um tamanho padrão para o item que diminui se necessário */
 }
