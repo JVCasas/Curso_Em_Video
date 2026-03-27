@@ -24,11 +24,11 @@ section{
     padding: 10px;
     background-color: #20b2aa;
     border: 1px solid black;
+    /*
     flex-basis: 150px;
     flex-shrink: 1;
-    /* valor que define que o item pode ser diminuido de acordo com o tamanho do container. Valor padrão 1. */
     flex-grow: 1;
-    /* valor que define que os itens podem crescer de acordo com o tamanho do container. Valor padrão 0 */
-
-
+    */
+    /* flex: grow shrink basis; */
+    flex: 1 1 150px;
 }
