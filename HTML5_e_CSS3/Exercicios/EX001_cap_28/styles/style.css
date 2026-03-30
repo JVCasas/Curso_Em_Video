@@ -14,14 +14,14 @@ html, body {
 
 div.container {
     display: grid;
-    width: 1200px;
+    width: 100vw;
     gap: 10px;
     border: 2px dashed #ff5d5d;
     grid-auto-rows: 100px;
     grid-auto-columns: 100px;
     place-items: stretch stretch;
     place-content: stretch stretch;
-    grid-template: repeat(3, 100px) / repeat(3, 1fr);
+    grid-template: repeat(3, 100px) / repeat(4, 1fr);
     grid-auto-flow: row;
     /* Controla o flow de adições de elementos no grid */
     /* row -> adiciona novos itens a partir de linhas (itens seguem o fluxo de linha) */
@@ -31,4 +31,29 @@ div.container {
 div.item {
     border: 1px dashed #909090;
     text-align: center;
+}
+
+div#a {
+    grid-row-start: 1;
+    /* define em qual linha horizontal (line-grid) o elemento começa */
+    grid-row-end: 2;
+    /* define em qual linha horizontal (line-grid) o elemento termina */
+    grid-column-start: 1;
+    /* define em qual linha vertical (line-grid) o elemento começa */
+    grid-column-end: -1;
+    /* define em qual linha vertical (line grid) o elemento termina  */
+}
+
+div#b {
+    grid-row-start: 2;
+    grid-row-end: -1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+div#c {
+    grid-row-start: 2;
+    grid-row-end: -1;
+    grid-column-start: 3;
+    grid-column-end: -1;
 }
