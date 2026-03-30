@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+div.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 100px 100px;
+    gap: 10px;
+    border: 2px dashed #ff5d5d;
+    align-items: center;
+    /* propriedade que altera o alinhamento vertical dos items */
+    /* stretch  -> estica os itens para caber dentro do grid item */
+    /* start    -> posiciona os itens para ficarem colados no topo do grid item */
+    /* center   -> posiciona os itens para ficarem centralizados no grid item */
+    /* end      -> posiciona os itens para ficarem colados no final do grid item */
+    justify-items: center;
+    /* propriedade que altera o alinhamento horizontal dos items */
+    /* stretch  -> estica os itens para caber dentro do grid item */
+    /* start    -> posiciona os itens para ficarem colados na esquerda (começo) do grid item */
+    /* center   -> posiciona os itens para ficarem centralizados no grid item */
+    /* end      -> posiciona os itens para ficarem colados na direita (final) do grid item */
+    align-content: space-around;
+    /* propriedade que altera o alinhamento vertical geral do conjunto de itens */
+    /* start -> cola os itens no topo do container */
+    /* center -> centraliza os itens no container */
+    /* end -> cola os itens no fundo do container */
+    /* space-between -> cola a primeira track no topo e a ultima no fundo do container e cria um espaçamento unifoeme entre as tracks */
+    /* space-evenly ->  alinha verticalmente os itens de forma a por um espaço vertical igual entre eles */
+    /* space-around -> divide o espaço do container em parcelas iguais e alinha cada elemento dentro dessas parcelas (gera um efeito semelhante ao margin) */
+    /* stretch -> estica os itens para que ocupem todo o espaço vertical do container (respeitando os gaps) */
+    justify-content: space-around;
+    /* propriedade que altera o alinhamento horizontal geral do conjunto de itens */
+    /* start -> cola os itens no lado esquerdo do container */
+    /* center -> centraliza os itens no container */
+    /* end -> cola os itens no lado direito do container */
+    /* space-between -> cola a primeira track na esquerda e a ultima na direita do container e cria um espaçamento unifoeme entre as tracks */
+    /* space-evenly ->  alinha horizontalmente os itens de forma a por um espaço horizontal igual entre eles */
+    /* space-around -> divide o espaço do container em parcelas iguais e alinha cada elemento dentro dessas parcelas (gera um efeito semelhante ao margin) */
+    /* stretch -> estica os itens para que ocupem todo o espaço horizontal do container (respeitando os gaps) */
+}
+
+div.item {
+    border: 1px dashed #909090;
+    text-align: center;
+}
