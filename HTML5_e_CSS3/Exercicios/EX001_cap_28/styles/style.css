@@ -53,7 +53,24 @@ div#b {
 
 div#c {
     grid-row-start: 2;
-    grid-row-end: -1;
+    grid-row-end: span 2;
+    /* span valor que indica o tamanho a partir da expansão do item */
     grid-column-start: 3;
     grid-column-end: -1;
+}
+
+div#d {
+    background-color: blue;
+    grid-row: 4 / 5;
+    /* simplificação para grid-row-start e grid-row-end */
+    /* grid-row: grid-row-start / grid-row-end; */
+    grid-column: 1 / -1;
+    /* simplificação para grid-column-start e grid-column-end */
+    /* grid-column: grid-column-start / grid-column-end; */
+}
+
+div#e {
+    grid-area: 5 / 1 / 6 / -1;
+    /* simplificação para grid-row e grid-column */
+    /* grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end; */
 }
