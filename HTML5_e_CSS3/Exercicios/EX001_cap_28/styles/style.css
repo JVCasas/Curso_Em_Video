@@ -22,35 +22,10 @@ div.container {
     place-items: stretch stretch;
     place-content: stretch stretch;
     grid-template: repeat(3, 100px) / repeat(3, 1fr);
-    /* repeat() função que repete valores */
-    /* repeat(numero de repetições, valor para repetir) */
-    /* xfr - valor que trabalha o tamanho do container por fração (o tamanho total do container é representado pela soma total fr dos itens */
-
-}
-
-div.container-b {
-    display: grid;
-    width: 1200px;
-    gap: 10px;
-    border: 2px dashed #ff5d5d;
-    grid-auto-rows: 100px;
-    grid-auto-columns: 100px;
-    place-items: stretch stretch;
-    place-content: stretch stretch;
-    grid-template: repeat(3, 100px) / 1fr 2fr 1fr;
-}
-
-div.container-c {
-    display: grid;
-    width: 1200px;
-    gap: 10px;
-    border: 2px dashed #ff5d5d;
-    grid-auto-rows: 100px;
-    grid-auto-columns: 100px;
-    place-items: stretch stretch;
-    place-content: stretch stretch;
-    grid-template: repeat(3, 100px) / 100px 20% 1fr 1fr;
-    /* frações em caso de mistura de valores contabilizam o total do espaço restante */
+    grid-auto-flow: row;
+    /* Controla o flow de adições de elementos no grid */
+    /* row -> adiciona novos itens a partir de linhas (itens seguem o fluxo de linha) */
+    /* column -> adiciona novos itens a partir de colunas (itens seguem o fluxo de coluna) */
 }
 
 div.item {
