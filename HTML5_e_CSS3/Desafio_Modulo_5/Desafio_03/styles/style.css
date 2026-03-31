@@ -14,7 +14,7 @@ html, body {
 
 body {
     display: grid;
-    grid-template: 20% 10% 60% 10% / 1fr 2fr 1fr;
+    grid-template: 20% 10% 60% 10% / 3fr 1fr;
 }
 
 header {
@@ -39,7 +39,7 @@ li {
 
 main {
     background-color: aqua;
-    grid-area: 3 / 1 / -2 / -2;
+    grid-area: 3 / 1 / -2 / 2;
 }
 
 aside {
